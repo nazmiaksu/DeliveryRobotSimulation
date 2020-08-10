@@ -1,0 +1,105 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  title "Food Delivery Robot"
+}
+Viewpoint {
+  fieldOfView 0.785394
+  orientation 0.9797042361585392 0.195123093632715 0.045897581463644435 5.811914557105892
+  position -4.046225297859464 7.1779152652375435 56.58095146301997
+  follow "Food delivery"
+}
+TexturedBackground {
+  texture "noon_building_overcast"
+  luminosity 2
+}
+Pedestrian {
+  translation -1.5 1.27 2
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_empty"
+}
+Floor {
+  translation 0 -0.01 0
+  name "floor(1)"
+  size 250 250
+  tileSize 1 1
+}
+FastFoodRestaurant {
+  translation -48.7441 0 89.7799
+  rotation 0 1 0 2.0944
+}
+BungalowStyleHouse {
+  translation 6.5 0 0
+}
+Auditorium {
+  translation 54.6037 -1.77636e-13 85.8997
+  rotation 0 1 0 -0.523595307179586
+}
+Roundabout {
+  translation -3.34462 0 52.6356
+  rotation 0 1 0 0.523602
+  borderHeight 0.3
+  roadNumber 3
+  startRoadsWidth 6
+  borderBoundingObject TRUE
+  centerBoundingObject TRUE
+}
+WoodenBox {
+  translation -3.52832 0.3 23.6029
+  name "wooden box(1)"
+  size 1 1 1
+}
+Pioneer2 {
+  translation -3.48 0 44.09
+  rotation 0 1 0 0.9162996938995747
+  name "Food delivery"
+  controller "deliver"
+  controllerArgs "-1.5 2"
+  extensionSlot [
+    Compass {
+      rotation 0 1 0 -1.5707996938995747
+      yAxis FALSE
+    }
+    GPS {
+    }
+  ]
+}
+StraightRoadSegment {
+  translation -3.34061 3.33955e-13 39.6595
+  rotation 0 1 0 3.14159
+  name "road(2)"
+  width 6
+  roadBorderHeight 0.3
+  length 50
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
+WoodenBox {
+  translation -3.40675 0.3 40.4528
+  size 1 1 1
+}
+WoodenBox {
+  translation -1.33383 0.3 32.5378
+  name "wooden box(2)"
+  size 1 1 1
+}
+StraightRoadSegment {
+  translation 33.8616 1.35003e-13 74.1332
+  rotation 0 1 0 -2.094395307179586
+  name "road(1)"
+  width 6
+  roadBorderHeight 0.3
+  length 30
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
+StraightRoadSegment {
+  translation -14.6031 1.35003e-13 59.138
+  rotation 0 -1 0 1.0472
+  name "road(3)"
+  width 6
+  roadBorderHeight 0.3
+  length 50
+  rightBorderBoundingObject TRUE
+  leftBorderBoundingObject TRUE
+}
